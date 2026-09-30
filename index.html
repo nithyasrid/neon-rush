@@ -1,0 +1,10 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEON RUSH — 100 Levels</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="logo">NEON <span>RUSH</span></div><div class="stats">LEVEL <b id="lv">1</b>/100 · SCORE <b id="score">0</b> · BEST <b id="best">0</b></div></header>
+<main>
+<section id="menu"><div class="hero"><div class="tag">100-LEVEL SINGLE PLAYER ARCADE</div><h1>NEON<br><span>RUSH</span></h1><p>Race the clock. Dodge hazards. Master every track.</p><button id="play">START RACE</button><button id="continue" class="alt">CONTINUE</button><small>WASD / Arrow Keys · SPACE = BOOST · R = RESTART</small></div></section>
+<section id="game" class="hide"><div class="panel"><div class="hud"><button id="home">⌂</button><div class="bar"><i id="fuel"></i></div><div id="time">00:00</div></div><canvas id="c" width="800" height="600"></canvas><div class="mobile"><button data-k="ArrowLeft">◀</button><button data-k="ArrowUp">▲</button><button data-k="ArrowDown">▼</button><button data-k="ArrowRight">▶</button><button data-k=" ">BOOST</button></div><div class="hint" id="hint">Reach the finish!</div></div></section>
+<section id="win" class="hide"><div class="card"><div class="tag">RACE COMPLETE</div><h2 id="wt">LEVEL CLEARED</h2><p id="wd"></p><button id="next">NEXT LEVEL</button></div></section>
+</main><script src="levels.js"></script><script src="game.js"></script></body></html>
